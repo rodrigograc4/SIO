@@ -1,0 +1,40 @@
+.Store{
+    height: 100vh;
+    background-color: #131418;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+}
+
+
+.left-store {
+  position: sticky;
+  top: 0;
+  border-right: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+}
+
+.right-store {
+  overflow-y: auto;
+  margin-top:10rem;
+}
+
+.store-title{
+  text-align: center;
+}
+
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Display two columns */
+  align-items: center;
+}
+
+.add-product{
+  height: 100px;
+  min-width: 200px;
+}

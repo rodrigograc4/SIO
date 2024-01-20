@@ -1,0 +1,68 @@
+.additem-page{
+    height: 100vh;
+      background-color: #131418;
+      display: flex;
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+  }
+
+.additem-modal{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.additem-modal h3{
+color:#01939c;
+font-size:26px;
+font-weight:bold;
+letter-spacing: 1px;
+margin-left: 20px;
+white-space: nowrap;
+padding-bottom: 2.5rem;
+align-items: center;
+text-align: center;
+
+}
+
+  
+  .form-group-item {
+    margin: 10px 0;
+  }
+  
+.form-group-item label {
+    display: block;
+    margin-bottom: 5px;
+    color:black;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .form-group-item input[type='text'],
+  .form-group-item input[type='number'],
+  .form-group-item input[type='file'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+button.additem{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }

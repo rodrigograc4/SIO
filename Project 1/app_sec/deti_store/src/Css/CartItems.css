@@ -1,0 +1,172 @@
+#cart {
+    margin-top: 30px;
+    overflow-y: auto;
+  }
+  #cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    
+  }
+
+  #thead1{
+    
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+  }
+
+  #thead1 td{
+    padding: 10px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  #thead2{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+    
+  }
+
+  #thead2 td{
+    padding: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+
+  #imPP{
+    width: 40px;
+    height: 40px;
+  }
+
+  #rem,
+  #deleteProd{
+    width: 50px;
+    text-align: center;
+  }
+
+  #im,
+  #imP{
+    
+    width: 50px;
+    text-align: center;
+    
+  }
+
+  #prod,
+  #nomeP{
+    width: 150px;
+    text-align: center;
+  }
+
+  #prec,
+  #precoP{
+    width: 50px;
+    text-align: center;
+  }
+
+  #quan,
+  #sub,
+  #quantP,
+  #precT{
+    width: 80px;
+    text-align: center;
+  }
+
+  #quant{
+    width: 50px;
+    text-align: center;
+    color: black;
+  }
+
+  
+  
+
+  #cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #subtotal h3{
+    padding-bottom: 10px;
+  }
+
+  #subtotal button{
+    width: 225px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(183, 99%, 31%);
+    min-width: 100px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+
+  #subtotal button:hover{
+    background: hsl(183, 99%, 41%);
+  }
+
+
+  #subtotal{
+    width: 40%;
+    height: 90px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 20px;
+    padding-top: 6px;
+
+    
+  }
+
+  #subtotal table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  #subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+
+  #delCart{
+    display: block; /* Make the button a block-level element */
+    margin-left: auto;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    background: hsla(0, 93%, 33%, 0.925);
+    min-width: 100px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    z-index: 999;
+    align-self: flex-end; /* Align the button to the bottom right */
+  }

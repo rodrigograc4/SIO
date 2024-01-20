@@ -1,0 +1,117 @@
+.edit-profile-page{
+    height: 100vh;
+      background-color: #131418;
+      display: flex;
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+  }
+
+.edit-profile-modal {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile-modal h3{
+   
+        color:#01939c;
+         font-size:26px;
+         font-weight:bold;
+         letter-spacing: 1px;
+         margin-left: 20px;
+         white-space: nowrap;
+         padding-bottom: 2.5rem;
+         align-items: center;
+        text-align: center;
+        
+        
+}
+
+.edit-profile-modal img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+        display: block;
+        margin: 0 auto; 
+   
+}
+
+.form-row input{
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    max-width: 400px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.form-row p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    max-width: 400px;
+    color: black;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.modal-open {
+    overflow: hidden; /* Impede a rolagem do fundo */
+    position: relative; /* Mantém a posição relativa para posicionamento do modal */
+}
+
+.modal-open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fundo opaco */
+    z-index: 1000; /* Coloca o fundo opaco acima de outros elementos */
+}
+
+.info-saved-modal {
+    position: fixed;
+    background: white;
+    color: #01939c;
+    padding: 2rem;
+    border: 2px solid #01939c;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; /* Coloca o modal acima do fundo opaco */
+    display: none; /* Inicialmente oculto */
+}
+
+.info-saved-modal p {
+    text-align: center;
+    color: #01939c;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+
+

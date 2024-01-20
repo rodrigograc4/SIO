@@ -1,0 +1,224 @@
+.checkout-page{
+    height: 100vh;
+    background-color: #131418;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-gap: 10px;
+}
+
+.checkout-page-left{
+    overflow-y: auto;
+}
+
+
+.checkout-page-left h2{
+    color:white;
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 4rem;
+}
+
+.checkout-page-left .checkout-cart{
+    width: 90%;
+    margin: auto auto;
+    padding-top: 3rem;
+}
+
+.checkout-page-right{
+    overflow-y: auto;
+}
+
+.checkout-page-right h1{
+    color:white;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.checkout-page-right .wrapper {
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    font-family: "Arimo";
+    background-color: #131418;
+    -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    animation: slideUp 2000ms ease;
+    margin: auto auto ;
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+
+    }
+}
+
+.checkout-page-right .container {
+    width: 65%;
+    padding: 5% 10%;
+}
+
+.checkout-page-right .container h1 {
+    align-self: center;
+}
+
+.checkout-page-right .container form {
+    width: 100%;
+
+    >* {
+        margin-top: 20px;
+    }
+
+    input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        font-family: "Arimo";
+        margin-top: 5px;
+        color: black;
+        border-radius: 4px;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 10px;
+        color: title;
+        letter-spacing: 1px;
+    }
+
+    h1:nth-of-type(2) {
+        margin-top: 10%;
+    }
+}
+
+.checkout-page-right .container .name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    div {
+        width: 45%;
+    }
+}
+
+.checkout-page-right .container .address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+
+.checkout-page-right .container .cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+    }
+}
+
+.checkout-page-right .container .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    button {
+        margin: 3px 0;
+        height: 30px;
+        width: 40%;
+        color: #cfc9e1;
+        background-color: #01939c;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+
+        &:hover {
+            animation-name: btn-hov;
+            animation-duration: 550ms;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes btn-hov {
+    100% {
+        background-color: #cfc9e1;
+        color: #01939c;
+        transform: scale(1.05)
+    }
+}
+
+.checkout-page-right .container input:focus,
+.checkout-page-right .container button:focus {
+    outline: none;
+}
+
+@media (max-width: 736px) {
+    .checkout-page-right .wrapper {
+        width: 100%;
+    }
+
+    .checkout-page-right .container {
+        width: 100%;
+    }
+
+    .checkout-page-right .container .btns {
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+
+    .checkout-page-right .container form h1 {
+        text-align: center;
+    }
+
+    .checkout-page-right .container .name,
+    .checkout-page-right .container .address-info,
+    .checkout-page-right .container .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .checkout-page-right .container .street,
+    .checkout-page-right .container .cc-num {
+        text-align: center;
+    }
+
+    .checkout-page-right .container input {
+        margin: 5px 0;
+        min-height: 30px;
+    }
+}

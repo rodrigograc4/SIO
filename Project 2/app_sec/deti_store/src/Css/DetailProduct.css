@@ -1,0 +1,218 @@
+.DetailProductPage{
+    height: 100vh;
+    background-color: #131418;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.productdetail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+  .productdetail-card {
+    width: 1000px;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+  }
+  
+
+.productdetail-card h2 {
+    color:#01939c;
+    font-size:36px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding-bottom: 6rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productdetail-card p {
+    font-size: 15px;
+    line-height: 22px;  
+    margin-bottom: 18px;
+    color: #999;
+    margin-left: 2rem;
+}
+
+.productdetail-card h3 {
+    font-size: 18px;
+    color: #626262;
+    font-weight: 600;
+    margin-bottom: 18px;
+    margin-top: 4rem;
+    margin-left: 18rem;
+}
+
+.productdetail-card h4 {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+    margin-left: 2rem;
+}
+
+.detailproduct-image {
+    width: 500px; /* Defina a largura desejada */
+    height: 500px; /* Defina a altura desejada */
+    object-fit: cover;
+}
+  
+
+.left-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.right-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailproduct-title{
+    text-align: center; 
+    margin-top: 10rem;
+}
+
+
+.container-add-review{
+    background-color: #131418;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container-add-review h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.add-review{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.detail-page-footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: #131418;
+}
+
+.main-container {
+
+    background-color: #131418;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    
+}
+
+
+.reviews-h2{
+    color:#01939c;
+    font-size:36px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.add-review-button {
+   margin-right: 2rem;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(183, 99%, 31%);
+    min-width: 150px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    z-index: 999; 
+  }
+  
+  .add-review-button:hover {
+    opacity: .95;
+  }
+  
+  .add-review-button .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .add-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+  }
+  
+  .add-review label {
+    color: white;
+  }
+  
+  .add-review textarea,
+  .add-review input {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%; /* Defina a largura que desejar para os campos */
+  }
+
+.no-reviews{
+  padding-bottom: 2rem;
+}
+  

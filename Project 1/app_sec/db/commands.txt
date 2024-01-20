@@ -1,0 +1,55 @@
+//fazer isto dentro da pasta db de preferencia
+docker pull mcr.microsoft.com/mssql/server:2019-latestmsq
+
+
+//mudar pass
+docker run -u 0 -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+
+//copiar --- atencao ao nome do container
+docker cp Deti_Store.sql sqlserver:/Deti_Store.sql
+
+//entrar no container
+docker exec -it  sqlserver /bin/bash
+
+apt-get update 
+apt-get install -y python3
+
+//instalar pip e instalar atraves do pip o mssql-cli
+//perguntem ao amigo do costume depende de muita coisa
+
+
+mssql-cli -S localhost -U SA -P Olaola123
+
+//dentro da master
+CREATE DATABASE Deti_Store
+exit
+
+
+mssql-cli -S localhost -U SA -P Olaola123 -d Deti_Store -i /Deti_Store.sql
+
+mssql-cli -S localhost -U SA -P Olaola123 -d Deti_Store
+
+//ta feito , pode dar problemas de Privilegios...
+
+/////////////////////
+
+//para atualizar
+
+
+//copiem o novo .sql la para dentro
+docker cp Deti_Store.sql sqlserver:/Deti_Store.sql
+
+
+docker exec -it  sqlserver /bin/bash
+
+mssql-cli -S localhost -U SA -P Olaola123
+
+DROP DATABASE Deti_Store
+CREATE DATABASE Deti_Store
+exit
+
+mssql-cli -S localhost -U SA -P Olaola123 -d Deti_Store -i /Deti_Store.sql
+
+mssql-cli -S localhost -U SA -P Olaola123 -d Deti_Store
+
+//ta feito

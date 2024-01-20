@@ -1,0 +1,16 @@
+-docker compose build
+
+-docker compose up
+
+
+
+# caso necessario #
+
+docker ps
+docker exec -it  db-sqlserver-1 /bin/bash
+
+
+#bash do container para entrar no terminal sql
+
+mssql-cli -S localhost -U SA -P Olaola123 -d Deti_Store
+

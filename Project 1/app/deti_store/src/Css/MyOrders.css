@@ -1,0 +1,91 @@
+.MyOrdersPage{
+    height: 100vh;
+    background-color: #131418;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-gap: 10px;
+}
+.center-orders {
+  position: sticky;
+  top: 0;
+  border-right: 2px solid white;
+  overflow-y: auto;
+  margin-top:10rem;
+}
+
+
+.orders-title{
+text-align: center;
+}
+
+.orders-container {
+  display: grid;
+  grid-template-rows: repeat(1, 1);
+  align-items: center;
+  width: 80%;
+  box-shadow: 0 2px 7px #dfdfdf;
+  background: #fafafa;
+  margin: 4rem auto 2rem;
+  position: relative;
+}
+
+.order-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;  
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+.details-container {
+  flex: 0 0 calc(50% - 1.5rem); /* Limite a largura a 50% com uma margem de 1.5rem */
+  align-items: center;
+  box-shadow: 0 2px 7px #dfdfdf;
+  background: #fafafa;
+  margin: auto;
+  position: relative;
+  padding: 1rem; /* Adicione algum preenchimento interno para separar os produtos */
+  box-sizing: border-box; /* Inclua a margem e o preenchimento na largura total */
+}
+
+
+.orders-container h3{
+  font-size: 25px;  
+  display: block;
+  margin-bottom: 18px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  color: #01939c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.orders-container p{
+  font-size: 15px;  
+  line-height: 22px;
+  margin-top: 18px;
+  color: rgb(63, 63, 63);
+  margin-left: 5rem;
+}
+
+.details-container p{
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  color: rgb(127, 127, 127);
+  margin-left: 3rem;
+}
+
+.details-container h2{
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  color: rgb(67, 67, 67);
+  margin-left: 3rem;
+}
